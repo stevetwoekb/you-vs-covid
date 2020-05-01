@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "SUBWT";
+    src: url("./assets/fonts/SUBWT.ttf");
+}
+
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    margin: 0;
+    font-family: "SUBWT";
+    color: #ec8e9e;
+    background-color: #000000;
+    cursor: url('assets/img/cursor.cur'), auto;
+}
+
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    color: #ec8e9e;
+    animation: 0.5s linear 0s infinite alternate title;
+}
+
+@keyframes title {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.canvas {
+    margin: 20px auto 0;
+    width: 800px;
+    height: 600px;
+    display: block;
+    background-image: url("./assets/main-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-bar {
+    box-shadow: 0 0 0 4px #904a6a;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar__progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,189,163,1) 0%, rgba(203,105,143,1) 100%);
+}
+
+.score {
+    color: #ec8e9e;
+    font-size: 24px;
+    min-height: 60px;
+}
+.game-menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 800px;
+    height: 600px;
+    background-image: url("./assets/main-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-menu__button {
+    font-family: "SUBWT";
+    border: none;
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url("./assets/img/start-btn.png");
+    font-size: 24px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    outline: none;;
+    cursor: url('assets/img/cursor.cur'), auto;
+}
+
+.game-wrapper {
+    position: relative;
+}
